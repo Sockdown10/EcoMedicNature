@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      margin:auto;
+      width: 50%;
+    }
+    fieldset{
+      border:1px solid black;
+      margin: auto;
+    }
+    #long{
+      width: 80%;
+    }
+  </style>
+</head>
+<body>
+
+
+<form action="">
+    <fieldset><legend>Datos del pedido:</legend>
+        <br>
+        <label for="">Nombre y Apellidos:</label><br>
+        <input id="long" type="text" name="Nombre y Apellidos"><br>
+        <br>
+        <label for="">Tipo de vía</label>
+        <select name="via" id="via">
+          <option value="">-Elige-</option>
+          <optgroup>
+            <option value="">Calle</option>
+            <option value="">Avenida</option>
+            <option value="">Paseo</option>
+          </optgroup>
+        </select><br>
+        <br>
+        <label for="">Dirección de envío:</label><br>
+        <input id="long" type="text" name="Direccion"><br>
+        <br>
+        <label for="">Teléfono:</label><br>
+        <input type="text" name="telefono"><br>
+      </fieldset>
+      <br>
+      <fieldset><legend>Datos de la tarjeta:</legend><br>
+        <label for="">Nombre de la tarjeta</label><br>
+        <input id="long" type="text" name="nombre tarjeta"><br>
+        <br>
+        <label for="">Nº de tarjeta:</label><br>
+        <input id="long" type="number" name="numero de tarjeta"><br>
+        <br>
+        <label for="">CVV:</label>
+        <input id="short" type="text" name="CVV">
+        <label for="">Fecha de caducidad:</label>
+        <input type="text" name="fecha vencimiento">
+        <hr>
+        <br>
+        <input type="checkbox" name="si" id="si">
+        <label for="">Aceptas los términos y condiciones de la compra.</label><br>
+        <input type="checkbox" name="novedades" id="novedades">
+        <label for="">Marca para recibir novedades sobre nuestros productos y servicios.</label>
+    </fieldset>
+    <br><br>
+      <button type="submit">Realizar compra</button>
+      <button type="reset">Borrar todo</button>
+</form>
+</body>
+</html>

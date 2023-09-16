@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoMedic Nature</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Water+Brush&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet">
+  <style>
+    /* reset */
+*{
+  margin: 0;
+  padding: 0;
+
+}
+#wrapper{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+label{
+  cursor: pointer;
+  
+    outline: none
+    }
+.menu{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+  width: 240px;
+  height: 100%;
+  transform: translate3d(-240px, 0, 0);
+  transition: transform 0.35s;
+     } 
+  
+  label.menu-toggle  {
+    position: absolute;   
+    right: -60px;
+    width: 60px;
+    height: 60px;
+    line-height: 0px;    
+    display: block;
+    padding: 0;
+    text-indent: -9999px;
+    background: #fff url(https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-512.png) 50% 50% / 25px 25px no-repeat
+  }
+  ul
+    li
+      > label{
+        background: url(https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-arrow-right-b-128.png) 95% 50% / 16px 16px no-repeat}
+      a, label{
+        display: block;
+        text-align: center;
+        padding: 0 20px;
+        line-height: 60px;
+        text-decoration: none;
+        color: #000}
+       
+
+/* hide inputs */          
+.menu-checkbox{
+  display: none}
+
+/* hide navigation icon for sublabels */    
+.menu .menu label.menu-toggle{
+  background: none}
+    
+/* fade in checked menu */    
+.menu-checkbox:checked + .menu{
+  transform: translate3d(0, 0, 0)}
+
+    
+    
+/* for show */
+html, body{
+  height: 100%
+}
+body{
+  background: url(https://37.media.tumblr.com/f6c67ec2821a91051e4175f8a102e1e2/tumblr_n6rzpcsMk41st5lhmo1_1280.jpg) 50% 50% / cover}
+
+p{
+  margin-bottom: 15px
+}
+#info{
+  display: table;
+  background: rgba(0,0,0,0.4);
+  height: 100%;
+  width: 100%}
+  #info-content{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 12px;
+  margin:auto;
+}
+    h1  {    
+      color: goldenrod;
+      border: 3px solid goldenrod;
+      text-align: center;
+      background-color: white;
+      font-size: 2em;
+      font-weight:bold;
+      padding: 0px;
+      margin: 10px;
+      display: inline-block }     
+      strong{
+        display: block;
+        font-size: 26px}
+
+       
+      .p1{
+        font-family: 'Pacifico', cursive;
+        font-size: 1.5em;
+        margin-top: -180px;
+        }
+        .p2{
+        font-family: 'Pacifico', cursive;
+        font-size: 1.5em;
+        
+        }
+        .p3{
+        font-family: 'Pacifico', cursive;
+        font-size: 1.5em;
+        margin-top: 15px;
+        
+        }
+      
+      
+      ul img{
+        width: 50px;
+        height: 50px;
+      }
+      ul li{
+        font-family: 'Pacifico',cursive;
+      }
+     li:hover{background-color: rgb(208, 187, 187);}
+     #logo{
+      width: 600px;
+      height: 190px;
+      display: flex;
+      flex-direction: row;
+      font-size: 4em;
+      color:rgb(20, 196, 20);
+      border:1px solid green;
+      background-color: beige;
+      border-radius: 25px;
+      justify-content: center;
+      font-family: 'Oleo Script Swash Caps', cursive;
+      margin:auto;
+    }
+    #logo section{
+      margin-top: 15px;
+    }
+    #logo{
+      animation:animacion_logo 6s;
+      animation-timing-function: linear;
+      animation-iteration-count: 1;
+      animation-direction: normal;
+      
+      animation-fill-mode: none;
+    }
+    @-webkit-keyframes animacion_logo {
+      0%{
+        -webkit-transform: translateX(-1600px);
+      }
+      12.5%{
+        -webkit-transform: translateX(-1400px);
+      }
+      25%{
+        -webkit-transform: translateX(-1200px);
+      }
+      37.5%{
+        -webkit-transform: translateX(-1000px);
+      }
+      50%{
+        -webkit-transform: translateX(-800px);
+      }
+      62.5%{
+        -webkit-transform: translateX(-600px);
+      }
+      75%{
+        -webkit-transform: translateX(-400px);
+      }
+      87.5%{
+        -webkit-transform: translateX(-200px);
+      }
+      100%{
+        -webkit-transform:translateX(0px)
+      }
+    }
+    
+    .hoja{
+      margin-left: 10px;
+      margin-top:20px;
+    }
+    section{
+      margin-left: 5px;
+    }
+    #wrapper #imgmenu{
+      bottom:0px;
+      width: 100%;
+      margin-top: 370px;
+    }
+    #animacion{
+      animation:animation_letras 2s;
+      animation-timing-function: linear;
+      animation-iteration-count: 1;
+      animation-direction: normal;
+      
+      animation-fill-mode: none;
+    }
+    @-webkit-keyframes animation_letras {
+      0%{
+        -webkit-transform: translateY(1600px);
+      }
+      12.5%{
+        -webkit-transform: translateY(1400px);
+      }
+      25%{
+        -webkit-transform: translateY(1200px);
+      }
+      37.5%{
+        -webkit-transform: translateY(1000px);
+      }
+      50%{
+        -webkit-transform: translateY(800px);
+      }
+      62.5%{
+        -webkit-transform: translateY(600px);
+      }
+      75%{
+        -webkit-transform: translateY(400px);
+      }
+      87.5%{
+        -webkit-transform: translateY(200px);
+      }
+      100%{
+        -webkit-transform:translateY(0px)
+      }
+    }
+    .margen{
+      margin-top: 150px;
+    }
+    .boton{
+      animation:animation_boton 4s;
+      animation-timing-function: linear;
+      animation-iteration-count: 1;
+      animation-direction: normal;
+      
+      animation-fill-mode: none;
+    }
+    @-webkit-keyframes animation_boton {
+      0%{
+        -webkit-transform: translateX(1600px);
+      }
+      12.5%{
+        -webkit-transform: translateX(1400px);
+      }
+      25%{
+        -webkit-transform: translateX(1200px);
+      }
+      37.5%{
+        -webkit-transform: translateX(1000px);
+      }
+      50%{
+        -webkit-transform: translateX(800px);
+      }
+      62.5%{
+        -webkit-transform: translateX(600px);
+      }
+      75%{
+        -webkit-transform: translateX(400px);
+      }
+      87.5%{
+        -webkit-transform: translateX(200px);
+      }
+      100%{
+        -webkit-transform:translateX(0px)
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+  
+  
+  <div id="wrapper">
+    
+    <div id="info">
+      <div id="info-content">
+      <div class="margen">
+        <div id="animacion">
+        <p class="p1"><pre style="font-size:1.5em;font-family:'Pacifico',cursive"> Empresa  emergente  en  el  sector  que  se  ha  comprometido  a <br> llevar  la  medicina  a  vuestra  casa  de  una  menera  mas  natural.</pre></p>
+        <p class="p2"><pre style="font-size:1.5em;font-family:'Pacifico',cursive">Desde  nuestra  página,  lo  más  importante  es  ayudar  a  nuestros  usuarios  y  devolver  esa <br>  confianza  que  nos  brindan  con  salud  y  bienestar.</pre></p>
+        <p class="p3" style="color:goldenrod"><u> Gracias por confiar en nosotros.</u></p></div>
+        <br>
+        <div id="gif">
+          <div id="logo">
+            <img src="img/planta-imagen-animada-0121.gif" alt="">
+            <section>
+              EcoMedic
+              <hr>
+              <p class="p4">Nature</p>
+              </section>
+            <img class="hoja" width="150px" height="150px" src="img/logo2.png" alt="">
+          </div>
+        </div>
+          
+      </div>
+        <div class="boton">
+          <a href="productos.html"><img src="" alt=""><img width="150px" height="100px" src="img/Presentación1 (4).png" alt=""></a>
+        </div>
+      </div>
+    </div>
+  video
+    <input type="checkbox" id="menu" name="menu" class="menu-checkbox">
+    <div class="menu">
+      <label class="menu-toggle" for="menu"><span>Toggle</span></label>
+      <ul>
+        <li>
+         <a href="productos.html">Productos</a>
+        </li>
+        
+        <li>      
+          <label for="menu-3">Redes Sociales</label>
+          <input type="checkbox" id="menu-3" name="menu-3" class="menu-checkbox">
+          <div class="menu">
+            <label class="menu-toggle" for="menu-3"><span>Toggle</span></label>
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/profile.php?id=100081043867547"><img src="img/social_media_network_facebook_icon_193324.png" alt=""></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/ecomedic_nature/"><img  src="img/instagram_social_.png" alt=""></a>
+                </li>
+                <li>
+                  <a href="#"><img src="img/youtube_video_player_icon_1.png" alt=""></a>
+                </li>
+                <li>
+                  <a href="#"><img src="img/twitter_social_media_network_icon_193319.png" alt=""></a>
+                </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="quienes.html">¿Quienes somos?</a>
+              </li>
+              <li>
+                <a href="Política de privacidad.pdf">Aviso Legal</a>
+              </li>
+              
+            </ul>
+            <img id="imgmenu" src="img/logo.PNG" alt="">
+          </div>
+        </li>
+        
+      </ul>
+      
+    </div>
+    
+  </div><!-- #wrapper -->
+  
+  
+</body>
+</html>

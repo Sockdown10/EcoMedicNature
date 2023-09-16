@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Water+Brush&display=swap" rel="stylesheet">
+  <style>
+    body{
+      max-width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin:auto;
+      background-color: rgb(189, 176, 176);
+     
+    }
+     #logo{
+      width: 400px;
+      height: 120px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      font-size: 2em;
+      color:rgb(20, 196, 20);
+      border:1px solid green;
+      background-color: beige;
+      border-radius: 25px;
+      font-family: 'Oleo Script Swash Caps', cursive;
+      top:3px;
+      margin-left:600px;
+      }
+    .p2{
+      margin-top: -20px;
+    }
+    img{
+      margin-left: 10px;
+      margin-top:20px;
+    }
+    section{
+      margin-left: 10px;
+    }
+    header{
+      width: 100%;
+      height: 195px;
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      background-image: url("img/tree-g1a755369a_1920.jpg");
+      background-size: cover;
+    }
+
+    #nav li ul li{
+      float:left;
+      padding:5px;
+      margin:0px;
+      
+    }
+    ul{
+      list-style: none;
+    }
+    li{
+      width: 150px;
+    }
+    
+    #nav > li{
+      float: left;
+    }
+    #nav li a{
+           background-color: beige;
+            color:black;
+            text-decoration: none;
+            padding: 10px 12px;
+            display: block;
+            margin:5px;
+        }
+    #nav li a:hover{
+      background-color: #434343;
+    }
+    #nav li ul{
+      display: none;
+      position: absolute;
+      max-width: 90%;
+    }
+
+    #nav li:hover > ul{
+     display: flex;
+     flex-direction: column;
+    }
+    #nav li ul li {
+      position:relative;
+    }
+    #nav li ul li ul{
+        margin:0px;
+        top:0px;
+    }
+    
+    #nav{
+      width: 90%;
+      display: flex;
+      justify-content: space-around;
+      margin-left: -20px;
+      background-color: beige;
+      opacity:75%;
+      margin-left: 50px;
+      margin-bottom: -35px;
+      border-radius: 20px;
+    }
+    main{
+      width: 90%;
+      margin: auto;
+      margin-top:10px
+    }
+    footer{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      background-color: black;
+      color:white;
+      bottom:0px;
+      margin-top:20px;
+      
+      
+    }
+    footer div{
+      margin:20px;
+    }
+    footer ul{
+      margin-left: -20px;
+    }
+    
+    a:visited{
+      color:white;
+    }
+    #contenedor{
+      width: 1250px;
+      
+      margin:auto;
+       display: flex;
+      
+      flex-wrap:wrap;
+      justify-content: space-around;
+      align-items: flex-start;
+    }
+    #contenedor div{
+      border:1px solid black;
+      width: 250px;
+      height: 250px;
+      margin-top:5px;
+      
+     
+    }
+
+    footer h2{
+      width: fit-content;
+      background-color: beige;
+      color:black;
+      border-radius: 10px;
+    }
+    footer a{
+      color:white;
+    }
+    li:hover{
+      background-color: #434343;
+      
+    }
+    .caja1{
+      display:flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .caja2{
+      display:flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .caja3{
+      display:flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+    #contacto{
+      margin-left: 15px;
+      margin-top:-10px
+    }
+
+    .logored img{
+      width: 70px;
+      height: 70px;
+    }
+    .logored{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin-top: 10px;
+      margin-bottom: 0px;
+    }
+  </style>
+
+</head>
+
+
+
+<body>
+  <header>
+    <div id="logo">
+      <section>
+        EcoMedic
+        <hr>
+        <p class="p2">Nature</p>
+        </section>
+      <img width="100px" height="100px" src="img/logo2.png" alt="">
+    </div>
+     
+    <ul id="nav">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="#">Redes sociales</a>
+          <ul class="redes">
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Youtube</a></li>
+            <li><a href="#">Twitter</a></li>
+          </ul>
+        </li>
+        <li><a href="quienes.html">¿Quiénes somos?</a></li>
+    </ul>
+    
+  </header>
+  
+  <main>
+    <section id="contenedor" style="background-color:white">
+      <div>caja</div>
+      <div>caja</div>
+      <div>caja</div>
+      <div>caja</div>
+      <div>caja</div>
+      <div>caja</div>
+      <div>caja</div>
+      <div>caja</div>
+      <div>caja</div>
+      <div>caja</div>
+      <div>caja</div>
+      <div>caja</div>
+      <div>caja</div>
+      <div>caja</div>
+      <div>caja</div>
+      <div>caja</div>
+      <div>caja</div>
+      <div>caja</div>
+      <div>caja</div>
+      <div>cahja</div>
+    </section>
+  </main>
+
+  <div class="logored">
+    <img src="img/twitter_social_media_network_icon_193319.png" alt=""><img src="img/instagram_social_.png" alt=""><img src="img/social_media_network_facebook_icon_193324.png" alt=""><img src="img/youtube_video_player_icon_1.png" alt="">
+  </div>
+
+  <footer>
+    <div class="caja1">
+      <h2 id="contacto">Contacto</h2>
+      <ul>
+        <li><a href="#">Centro de soporte</a></li>
+        <li><a href="#">Contacto</a></li>
+        <li><a href="#">Trabaja con nosotros</a></li>
+      </ul>
+    </div>
+
+    <div class="caja2">
+      <h2 style="margin-left:10px">Quienes somos</h2>
+      <ul>
+        <li><a href="#">Nuestras tiendas</a></li>
+        <li><a href="#">Condiciones de compra</a></li>
+        <li><a href="#">Aviso legal</a></li>
+        <li><a href="#">Privacidad</a></li>
+      </ul>
+    </div>
+
+    <div class="caja3">
+      <h2>Redes sociales</h2>
+      <ul>
+        <li><a href="#">Youtube</a></li>
+        <li><a href="#">Twitter</a> </a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Instagram</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      max-width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin:auto;
+      background-color: rgb(189, 176, 176);
+     
+    }
+     #logo{
+      width: 500px;
+      height: 120px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      font-size: 2em;
+      color:rgb(20, 196, 20);
+      border:1px solid green;
+      background-color: beige;
+      border-radius: 25px;
+      font-family: 'Oleo Script Swash Caps', cursive;
+      top:3px;
+      margin-left: 520px;
+      }
+    .p2{
+      margin-top: -20px;
+    }
+    img{
+      margin-left: 10px;
+      margin-top:20px;
+    }
+    section{
+      margin-left: 10px;
+    }
+    header{
+      width: 100%;
+      height: 187px;
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      background-image: url("img/tree-g1a755369a_1920.jpg");
+      background-size: cover;
+    }
+
+    #nav li ul li{
+      float:left;
+      padding:5px;
+      margin:0px;
+      
+    }
+    ul{
+      list-style: none;
+    }
+    li{
+      width: 150px;
+    }
+    
+    #nav > li{
+      float: left;
+    }
+    #nav li a{
+           background-color: beige;
+            color:black;
+            text-decoration: none;
+            padding: 10px 12px;
+            display: block;
+            margin:5px;
+        }
+    #nav li a:hover{
+      background-color: #434343;
+    }
+    #nav li ul{
+      display: none;
+      position: absolute;
+      max-width: 90%;
+    }
+
+    #nav li:hover > ul{
+     display: flex;
+     flex-direction: column;
+    }
+    #nav li ul li {
+      position:relative;
+    }
+    #nav li ul li ul{
+        margin:0px;
+        top:0px;
+    }
+    
+    #nav{
+      width: 90%;
+      display: flex;
+      justify-content: space-around;
+      margin-left: -20px;
+      background-color: beige;
+      opacity:75%;
+      margin-left: 50px;
+      margin-bottom: -20px;
+      border-radius: 20px;
+    }
+    main{
+      width: 90%;
+      margin: auto;
+      margin-top:10px;
+      background-color: white;
+    }
+    footer{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      background-color: black;
+      color:white;
+      bottom:0px;
+      margin-top:20px;
+      
+      
+    }
+    footer div{
+      margin:20px;
+    }
+    footer ul{
+      margin-left: -20px;
+    }
+    
+    a:visited{
+      color:white;
+    }
+    #contenedor{
+      width: 1250px;
+      
+      margin:auto;
+       display: flex;
+      
+      flex-wrap:wrap;
+      justify-content: space-around;
+      align-items: flex-start;
+    }
+    #contenedor div{
+      border:1px solid black;
+      width: 250px;
+      height: 250px;
+      margin-top:5px;
+      
+     
+    }
+
+    footer h2{
+      width: fit-content;
+      background-color: goldenrod;
+      color:black;
+      border-radius: 10px;
+    }
+    li:hover{
+      background-color: #434343;
+      
+    }
+    .caja1{
+      display:flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .caja2{
+      display:flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .caja3{
+      display:flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+    #contacto{
+      margin-left: 15px;
+      margin-top:-10px
+    }
+    
+    fieldset{
+      border:1px solid black;
+      margin: auto;
+    }
+    #long{
+      width: 80%;
+    }
+  </style>
+
+</head>
+
+
+
+<body>
+  <header>
+    <div id="logo">
+      <section>
+        EcoMedic
+        <hr>
+        <p class="p2">Nature</p>
+        </section>
+      <img width="100px" height="100px" src="img/logo2.png" alt="">
+    </div>
+     
+    <ul id="nav">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="#">Redes sociales</a>
+          <ul class="redes">
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Youtube</a></li>
+            <li><a href="#">Twitter</a></li>
+          </ul>
+        </li>
+        <li><a href="quienes.html">¿Quiénes somos?</a></li>
+    </ul>
+    
+  </header>
+  
+  <main>
+    <section>
+      <form action="">
+        <fieldset><legend>Datos del pedido:</legend>
+            <br>
+            <label for="">Nombre y Apellidos:</label><br>
+            <input id="long" type="text" name="Nombre y Apellidos"><br>
+            <br>
+            <label for="">Tipo de vía</label>
+            <select name="via" id="via">
+              <option value="">-Elige-</option>
+              <optgroup>
+                <option value="">Calle</option>
+                <option value="">Avenida</option>
+                <option value="">Paseo</option>
+              </optgroup>
+            </select><br>
+            <br>
+            <label for="">Dirección de envío:</label><br>
+            <input id="long" type="text" name="Direccion"><br>
+            <br>
+            <label for="">Teléfono:</label><br>
+            <input type="text" name="telefono"><br>
+          </fieldset>
+          <br>
+          <fieldset><legend>Datos de la tarjeta:</legend><br>
+            <label for="">Nombre de la tarjeta</label><br>
+            <input id="long" type="text" name="nombre tarjeta"><br>
+            <br>
+            <label for="">Nº de tarjeta:</label><br>
+            <input id="long" type="number" name="numero de tarjeta"><br>
+            <br>
+            <label for="">CVV:</label>
+            <input id="short" type="text" name="CVV">
+            <label for="">Fecha de caducidad:</label>
+            <input type="text" name="fecha vencimiento">
+            <hr>
+            <br>
+            <input type="checkbox" name="si" id="si">
+            <label for="">Aceptas los términos y condiciones de la compra.</label><br>
+            <input type="checkbox" name="novedades" id="novedades">
+            <label for="">Marca para recibir novedades sobre nuestros productos y servicios.</label>
+        </fieldset>
+        <br><br>
+          <button type="submit">Realizar compra</button>
+          <button type="reset">Volver atrás</button>
+    </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="caja1">
+      <h2 id="contacto">Contacto</h2>
+      <ul>
+        <li><a href="#">Centro de soporte</a></li>
+        <li><a href="#">Contacto</a></li>
+        <li><a href="#">Trabaja con nosotros</a></li>
+      </ul>
+    </div>
+
+    <div class="caja2">
+      <h2 style="margin-left:10px">Quienes somos</h2>
+      <ul>
+        <li><a href="#">Nuestras tiendas</a></li>
+        <li><a href="#">Condiciones de compra</a></li>
+        <li><a href="#">Aviso legal</a></li>
+        <li><a href="#">Privacidad</a></li>
+      </ul>
+    </div>
+
+    <div class="caja3">
+      <h2>Redes sociales</h2>
+      <ul>
+        <li><a href="#"><img src="img/" alt=""></a></li>
+        <li><a href="#"><img src="img/" alt=""></a></li>
+        <li><a href="#"><img src="img/" alt=""></a></li>
+        <li><a href="#"><img src="img/" alt=""></a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
